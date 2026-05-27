@@ -86,7 +86,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElement
 });
 if (__VLS_ctx.errorMessage) {
     __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
-        ...{ class: "mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700" },
+        ...{ class: "mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 break-words [overflow-wrap:anywhere]" },
     });
     (__VLS_ctx.errorMessage);
 }
@@ -215,6 +215,8 @@ if (__VLS_ctx.result) {
 /** @type {__VLS_StyleScopedClasses['py-3']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-sm']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-red-700']} */ ;
+/** @type {__VLS_StyleScopedClasses['break-words']} */ ;
+/** @type {__VLS_StyleScopedClasses['[overflow-wrap:anywhere]']} */ ;
 /** @type {__VLS_StyleScopedClasses['mt-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['rounded-2xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['border']} */ ;

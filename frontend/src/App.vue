@@ -66,8 +66,8 @@ async function parseUrl() {
   <main class="min-h-screen bg-gradient-to-b from-slate-100 via-white to-slate-100 p-4 text-slate-900">
     <div class="mx-auto max-w-4xl py-10">
       <header class="mb-8 text-center">
-        <h1 class="text-3xl font-bold tracking-tight">Media Parser Pro</h1>
-        <p class="mt-2 text-sm text-slate-500">后端只解析链接，下载完全走浏览器本地网络</p>
+        <h1 class="text-3xl font-bold tracking-tight">ZeroFlow Media Parser</h1>
+        <p class="mt-2 text-sm text-slate-500">智能解析多平台媒体资源，直链提取与本地安全下载一体化处理</p>
       </header>
 
       <section class="rounded-2xl border border-slate-200 bg-white p-5 shadow-lg">
@@ -93,7 +93,10 @@ async function parseUrl() {
         </div>
       </section>
 
-      <div v-if="errorMessage" class="mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+      <div
+        v-if="errorMessage"
+        class="mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 break-words [overflow-wrap:anywhere]"
+      >
         {{ errorMessage }}
       </div>
 
