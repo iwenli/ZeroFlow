@@ -77,14 +77,17 @@ async function parseUrl() {
             id="url-input"
             v-model="inputUrl"
             type="url"
-            class="h-12 flex-1 rounded-xl border border-slate-300 px-4 outline-none ring-sky-500 transition focus:ring-2"
-            placeholder="https://..."
+            class="h-14 w-full rounded-xl border border-slate-300 px-4 text-base leading-none outline-none ring-sky-500 transition focus:ring-2 sm:h-12 sm:flex-1 sm:text-sm"
+            placeholder="粘贴链接（支持 YouTube、X/Twitter、Instagram、TikTok、Bilibili、小红书 等）"
           />
-          <button class="h-12 rounded-xl bg-slate-900 px-4 text-white hover:bg-slate-700" @click="pasteFromClipboard">
+          <button
+            class="flex h-14 w-full items-center justify-center rounded-xl bg-slate-900 px-4 text-base leading-none text-white hover:bg-slate-700 sm:h-12 sm:w-auto sm:text-sm"
+            @click="pasteFromClipboard"
+          >
             一键粘贴
           </button>
           <button
-            class="h-12 rounded-xl bg-sky-600 px-5 text-white hover:bg-sky-700 disabled:cursor-not-allowed disabled:opacity-50"
+            class="flex h-14 w-full items-center justify-center rounded-xl bg-sky-600 px-5 text-base leading-none text-white hover:bg-sky-700 disabled:cursor-not-allowed disabled:opacity-50 sm:h-12 sm:w-auto sm:text-sm"
             :disabled="!canSubmit"
             @click="parseUrl"
           >
